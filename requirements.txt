@@ -1,0 +1,10 @@
+streamlit
+torch
+pandas
+screed
+scipy
+transformers
+
+
+
+
