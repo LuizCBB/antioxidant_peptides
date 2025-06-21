@@ -37,7 +37,8 @@ def clear_sequence(sequence):
 
 model_path = "./esm2_t6_8M_UR50D-finetuned-antioxidantes"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
-model = AutoModelForSequenceClassification.from_pretrained(model_path)
+#model = AutoModelForSequenceClassification.from_pretrained(model_path)
+model = AutoModelForSequenceClassification.from_pretrained(model_path, device_map=None).to("cpu")
 
 labels_model = ['Não antioxidante', 'Antioxidante'] 
  
